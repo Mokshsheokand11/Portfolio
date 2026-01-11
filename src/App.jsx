@@ -4,7 +4,7 @@ import Home from "./components/Home.jsx"
 import About from "./components/About.jsx"
 import Potfolio from "./components/Portfolio.jsx"
 import Experience from './components/Experience.jsx'
-import Contact from './components/contact.jsx'
+import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import { Toaster } from 'react-hot-toast'
 function App() {
