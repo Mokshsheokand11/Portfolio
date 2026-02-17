@@ -17,6 +17,8 @@ function Experience() {
     { id: 4, logo: Reactjs, name: "Reactjs" },
     { id: 5, logo: Mongodb, name: "Mongodb" },
     { id: 6, logo: Nodejs, name: "Nodejs" },
+    { id: 7, logo: Java, name: "Java" },
+    
   ]
 
   return (
