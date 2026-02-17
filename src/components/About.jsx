@@ -125,6 +125,19 @@ function About() {
       <h1 className="w-full text-2xl font-semibold mt-12 mb-4 cursor-default text-gray-950">
         Professional Experience
       </h1>
+      
+      <h2 className="mb-5">Manav Rachna University — MR Impact</h2>
+<span className="text-gray-900 text-sm">
+  ERP Support Coordinator
+</span>
+
+<ul className="list-disc ml-5 mt-3 text-gray-900 space-y-1">
+  <li>Assisted in managing and monitoring the college ERP system (iCloud EMS) to support academic and administrative operations efficiently.</li>
+  <li>Resolved student login issues, subject registration errors, and result access problems while ensuring minimal system downtime.</li>
+  <li>Collaborated with faculty members and the IT department to ensure smooth ERP functioning during admissions, examinations, and peak academic activities.</li>
+  <li>Identified and improved UI inconsistencies within the ERP platform by refining layout structure, enhancing responsiveness, and improving overall user experience.</li>
+</ul>
+
       <h2 className="mb-5">Freelance/Independent Client</h2>
       <a
         href="https://aggarwalrubberudyog.com/"
