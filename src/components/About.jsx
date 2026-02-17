@@ -125,35 +125,45 @@ function About() {
       <h1 className="w-full text-2xl font-semibold mt-12 mb-4 cursor-default text-gray-950">
         Professional Experience
       </h1>
+      {/* First Experience */}
+<div className="mb-12">
+  <h2 className="mb-2">Manav Rachna University — MR Impact</h2>
+  
+  <span className="text-gray-900 text-sm">
+    ERP Support Coordinator
+  </span>
+
+  <ul className="list-disc ml-5 mt-3 text-gray-900 space-y-1">
+    <li>Assisted in managing and monitoring the college ERP system (iCloud EMS) to support academic and administrative operations efficiently.</li>
+    <li>Resolved student login issues, subject registration errors, and result access problems while ensuring minimal system downtime.</li>
+    <li>Collaborated with faculty members and the IT department to ensure smooth ERP functioning during admissions, examinations, and peak academic activities.</li>
+    <li>Identified and improved UI inconsistencies within the ERP platform by refining layout structure, enhancing responsiveness, and improving overall user experience.</li>
+  </ul>
+</div>
+
+{/* Second Experience */}
+<div className="mb-12">
+  <h2 className="mb-2">Freelance/Independent Client</h2>
+  
+  <a
+    href="https://aggarwalrubberudyog.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-900 text-sm hover:text-sky-500 transition-colors duration-300 underline-offset-4 hover:underline"
+  >
+    Aggarwal Rubbers — Website
+  </a>
+
+  <ul className="list-disc ml-5 mt-3 text-gray-900 space-y-1">
+    <li>Worked on building and refining dynamic web interfaces with a focus on component-based layouts and reusable UI sections.</li>
+    <li>Improved user experience by structuring pages for better state flow, visual consistency, and smooth user interactions.</li>
+    <li>Implemented responsive, mobile-first designs ensuring seamless performance across devices and browsers.</li>
+    <li>Optimized front-end workflows by organizing page components and improving load behavior.</li>
+    <li>Collaborated to translate business requirements into functional, scalable web interfaces.</li>
+  </ul>
+</div>
+
       
-      <h2 className="mb-5">Manav Rachna University — MR Impact</h2>
-<span className="text-gray-900 text-sm">
-  ERP Support Coordinator
-</span>
-
-<ul className="list-disc ml-5 mt-3 text-gray-900 space-y-1">
-  <li>Assisted in managing and monitoring the college ERP system (iCloud EMS) to support academic and administrative operations efficiently.</li>
-  <li>Resolved student login issues, subject registration errors, and result access problems while ensuring minimal system downtime.</li>
-  <li>Collaborated with faculty members and the IT department to ensure smooth ERP functioning during admissions, examinations, and peak academic activities.</li>
-  <li>Identified and improved UI inconsistencies within the ERP platform by refining layout structure, enhancing responsiveness, and improving overall user experience.</li>
-</ul>
-
-      <h2 className="mb-5">Freelance/Independent Client</h2>
-      <a
-        href="https://aggarwalrubberudyog.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-900 text-sm hover:text-sky-500 transition-colors duration-300 underline-offset-4 hover:underline"
-      >
-        Aggarwal Rubbers — Website
-      </a>
-      <ul className="list-disc ml-5 mt-3 text-gray-900 space-y-1">
-        <li>Worked on building and refining dynamic web interfaces with a focus on component-based layouts and reusable UI sections.</li>
-        <li>Improved user experience by structuring pages for better state flow, visual consistency, and smooth user interactions.</li>
-        <li>Implemented responsive, mobile-first designs ensuring seamless performance across devices and browsers.</li>
-        <li>Optimized front-end workflows by organizing page components and improving load behavior.</li>
-        <li>Collaborated to translate business requirements into functional, scalable web interfaces.</li>
-      </ul>
     </div>
     </Element>
   )
