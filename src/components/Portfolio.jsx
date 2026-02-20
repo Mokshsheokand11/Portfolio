@@ -1,11 +1,11 @@
 import { Element } from "react-scroll";
-import React from 'react'
-import Java from "../../public/Java.jpg"
-import Mongodb from "../../public/Mongodb.png"
-import Nodejs from "../../public/Node.png"
-import Reactjs from "../../public/React.png"
-import express from "../../public/express.png"
-import python from "../../public/python.jpeg"
+import React from "react";
+import Java from "../../public/Java.jpg";
+import Mongodb from "../../public/Mongodb.png";
+import Nodejs from "../../public/Node.png";
+import Reactjs from "../../public/React.png";
+import express from "../../public/express.png";
+import python from "../../public/python.jpeg";
 
 function Portfolio() {
   const cardItems = [
@@ -15,7 +15,16 @@ function Portfolio() {
     { id: 4, logo: Reactjs, name: "Reactjs" },
     { id: 5, logo: express, name: "Expressjs" },
     { id: 6, logo: python, name: "Python" },
-  ]
+  ];
+
+  const handleSourceClick = (name) => {
+    if (name === "Java") {
+      window.open(
+        "https://github.com/Mokshsheokand11/The-Daily_Grocer",
+        "_blank"
+      );
+    }
+  };
 
   return (
     <Element name="portfolio">
@@ -33,16 +42,15 @@ function Portfolio() {
             {cardItems.map(({ id, logo, name }) => (
               <div
                 key={id}
-                className="md:w-[300px]  border-[2px] rounded-lg shadow-lg 
+                className="md:w-[300px] border-[2px] rounded-lg shadow-lg 
                            p-4 cursor-pointer 
                            hover:scale-110 hover:bg-blue-50
                            transition-all duration-300
                            flex flex-col gap-4"
               >
-
                 <img
                   src={logo}
-                  alt=""
+                  alt={name}
                   className="w-[120px] h-[120px] p-1 rounded-full border-[2px] mx-auto"
                 />
 
@@ -54,36 +62,25 @@ function Portfolio() {
                   </p>
                 </div>
 
-                <div className="px-6 py-4 space-x-3 justify-around">
-                  <button className="bg-green-500 hover:bg-green-800 text-white font-semi-bold px-4 py-2 rounded">
+                <div className="px-6 py-4 flex justify-around">
+                  <button className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded">
                     Video
                   </button>
 
-                  {name === "Java" ? (
-                    <a
-                      href="https://github.com/Mokshsheokand11/The-Daily_Grocer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="bg-blue-500 hover:bg-blue-800 text-white font-semi-bold px-4 py-2 rounded">
-                        Source code
-                      </button>
-                    </a>
-                  ) : (
-                    <button className="bg-blue-500 hover:bg-blue-800 text-white font-semi-bold px-4 py-2 rounded">
-                      Source code
-                    </button>
-                  )}
-
+                  <button
+                    onClick={() => handleSourceClick(name)}
+                    className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded"
+                  >
+                    Source code
+                  </button>
                 </div>
-
               </div>
             ))}
           </div>
         </div>
       </div>
     </Element>
-  )
+  );
 }
 
-export default Portfolio
+export default Portfolio;
