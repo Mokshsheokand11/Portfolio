@@ -17,24 +17,6 @@ function Portfolio() {
     { id: 6, logo: python, name: "Python" },
   ];
 
-  const handleSourceClick = (name) => {
-    if (name === "Java") {
-      window.open(
-        "https://github.com/Mokshsheokand11/The-Daily_Grocer",
-        "_blank"
-      );
-    }
-  };
-
-  const handlePreviewClick = (name) => {
-    if (name === "Java") {
-      window.open(
-        "https://the-daily-grocer.vercel.app/",
-        "_blank"
-      );
-    }
-  };
-
   return (
     <Element name="portfolio">
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-16">
@@ -72,19 +54,41 @@ function Portfolio() {
                 </div>
 
                 <div className="px-6 py-4 flex justify-around">
-                  <button
-                    onClick={() => handlePreviewClick(name)}
-                    className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded"
-                  >
-                    Preview
-                  </button>
+                  
+                  {/* Preview Button */}
+                  {name === "Java" ? (
+                    <a
+                      href="https://the-daily-grocer.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded">
+                        Preview
+                      </button>
+                    </a>
+                  ) : (
+                    <button className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded">
+                      Preview
+                    </button>
+                  )}
 
-                  <button
-                    onClick={() => handleSourceClick(name)}
-                    className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded"
-                  >
-                    Source code
-                  </button>
+                  {/* Source Code Button */}
+                  {name === "Java" ? (
+                    <a
+                      href="https://github.com/Mokshsheokand11/The-Daily_Grocer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded">
+                        Source code
+                      </button>
+                    </a>
+                  ) : (
+                    <button className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded">
+                      Source code
+                    </button>
+                  )}
+
                 </div>
               </div>
             ))}
