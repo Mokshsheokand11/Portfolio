@@ -26,6 +26,15 @@ function Portfolio() {
     }
   };
 
+  const handlePreviewClick = (name) => {
+    if (name === "Java") {
+      window.open(
+        "https://the-daily-grocer.vercel.app/",
+        "_blank"
+      );
+    }
+  };
+
   return (
     <Element name="portfolio">
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-16">
@@ -63,7 +72,10 @@ function Portfolio() {
                 </div>
 
                 <div className="px-6 py-4 flex justify-around">
-                  <button className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded">
+                  <button
+                    onClick={() => handlePreviewClick(name)}
+                    className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded"
+                  >
                     Preview
                   </button>
 
