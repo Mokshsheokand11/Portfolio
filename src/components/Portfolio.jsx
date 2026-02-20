@@ -47,15 +47,16 @@ function Portfolio() {
 
                 <div className="px-2 text-center">
                   <div className="font-semibold text-xl mb-2">{name}</div>
+
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    Developed a full-stack application focusing on modular
-                    components, seamless data flow, and performance-oriented design.
+                    {name === "Java"
+                      ? "Developed a Java-based supermarket billing system featuring real-time invoice generation, product management, and efficient transaction processing."
+                      : "Developed a full-stack application focusing on modular components, seamless data flow, and performance-oriented design."}
                   </p>
                 </div>
 
                 <div className="px-6 py-4 flex justify-around">
                   
-                  {/* Preview Button */}
                   {name === "Java" ? (
                     <a
                       href="https://the-daily-grocer.vercel.app/"
@@ -72,7 +73,6 @@ function Portfolio() {
                     </button>
                   )}
 
-                  {/* Source Code Button */}
                   {name === "Java" ? (
                     <a
                       href="https://github.com/Mokshsheokand11/The-Daily_Grocer"
