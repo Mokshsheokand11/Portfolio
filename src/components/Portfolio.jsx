@@ -73,7 +73,10 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded">
+                      <button
+                        className="bg-green-500 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded"
+                        onClick={() => window.open("https://automated-ai-yt-shorts.vercel.app/", "_blank", "noopener,noreferrer")}
+                      >
                         Preview
                       </button>
                     </a>
@@ -109,7 +112,10 @@ function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded">
+                      <button
+                        className="bg-blue-500 hover:bg-blue-800 text-white font-semibold px-4 py-2 rounded"
+                        onClick={() => window.open("https://github.com/Mokshsheokand11/Automated-AI-Powered-Yt-Shorts", "_blank", "noopener,noreferrer")}
+                      >
                         Source code
                       </button>
                     </a>
