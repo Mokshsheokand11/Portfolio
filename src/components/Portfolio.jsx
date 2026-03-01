@@ -6,7 +6,7 @@ import Nodejs from "../../public/Node.png";
 import Reactjs from "../../public/React.png";
 import express from "../../public/express.png";
 import python from "../../public/python.jpeg";
-
+import { SiTypescript } from "react-icons/si";
 function Portfolio() {
   const cardItems = [
     { id: 1, logo: Java, name: "Java" },
@@ -15,6 +15,7 @@ function Portfolio() {
     { id: 4, logo: Reactjs, name: "Reactjs" },
     { id: 5, logo: express, name: "Expressjs" },
     { id: 6, logo: python, name: "Python" },
+      { id: 7, logo: <SiTypescript size={250} />, name: "Typescript" },
   ];
 
   return (
